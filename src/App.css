@@ -210,6 +210,13 @@ h1 { margin: 18px 0 18px; color: var(--chalk); font-size: clamp(54px, 5.5vw, 86p
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }.contact-form label { display: grid; gap: 7px; }.contact-form label > span { text-transform: uppercase; font-size: 12px; font-weight: 950; }
 .contact-form input, .contact-form textarea { width: 100%; padding: 13px 14px; color: var(--black); background: white; border: 2px solid var(--black); border-radius: 0; outline: 0; font: 13px ui-monospace, monospace; resize: vertical; transition: box-shadow .2s, border-color .2s; }
 .contact-form input:focus, .contact-form textarea:focus { border-color: var(--violet); box-shadow: 4px 4px 0 var(--violet); }.contact-form .button { width: max-content; cursor: pointer; }
+.contact-form .form-honeypot { position: absolute; left: -10000px; width: 1px; height: 1px; padding: 0; border: 0; }
+.contact-form .button:disabled { cursor: wait; opacity: .72; transform: none; box-shadow: 6px 6px 0 var(--black); }
+.form-feedback { margin: 0; padding: 11px 13px; display: flex; align-items: center; gap: 9px; border: 2px solid var(--black); font-family: ui-monospace, monospace; font-size: 12px; font-weight: 800; line-height: 1.45; }
+.form-feedback.success { background: #d9ffbf; }.form-feedback.error { background: #ffd2d2; }
+.form-feedback svg { width: 20px; height: 20px; flex: none; }
+.spin { animation: formSpin .8s linear infinite; }
+@keyframes formSpin { to { transform: rotate(360deg); } }
 
 .site-footer { position: relative; min-height: 120px; padding: 22px 28px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 18px 34px; background: var(--yellow); border: 2px solid var(--black); }
 .site-footer::before { content: ""; position: absolute; top: 0; left: 0; width: 84px; height: 8px; background: var(--violet); border-right: 2px solid var(--black); border-bottom: 2px solid var(--black); }
