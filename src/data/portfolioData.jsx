@@ -1,6 +1,6 @@
 import {
-  AudioWaveform, Building2, CodeXml, Gamepad2, Gauge, Globe2,
-  GraduationCap, MonitorSmartphone, PanelsTopLeft, ServerCog,
+  AudioWaveform, CodeXml, Gauge, Globe2, GraduationCap,
+  MonitorSmartphone, PanelsTopLeft, ReceiptText, ServerCog,
   TerminalSquare, UserRoundCog, Users, Zap,
 } from 'lucide-react'
 import {
@@ -11,13 +11,12 @@ import {
 
 export const projects = [
   { number: '01', name: 'AMDJ', type: 'React · Tailwind\nLanding Page', icon: Zap, tone: 'lime', url: 'https://github.com/jamal-byte-20/AMDJ' },
-  { number: '02', name: 'CMCampus', type: 'JavaScript\nDigital Platform', icon: Building2, tone: 'violet', url: 'https://github.com/jamal-byte-20/CMCampus_bm' },
-  { number: '03', name: 'CMC Stages', type: 'Laravel · PHP\nInternship Platform', icon: ServerCog, tone: 'dark', url: 'https://github.com/jamal-byte-20/CMC_Stages' },
-  { number: '04', name: 'Tic Tac Game', type: 'React · CSS\nWeb Game', icon: Gamepad2, tone: 'violet', url: 'https://github.com/jamal-byte-20/TIC-TAC-GAME' },
-  { number: '05', name: 'Employee Manager', type: 'Python\nDesktop App', icon: UserRoundCog, tone: 'lime', url: 'https://github.com/jamal-byte-20/Employes-manager' },
-  { number: '06', name: 'Portfolio V2', type: 'React · Vite\nPortfolio', icon: AudioWaveform, tone: 'violet', url: 'https://github.com/jamal-byte-20/portfolio_v2' },
-  { number: '07', name: 'Ekbaal Agency', type: 'WordPress\nMarketing Portfolio', icon: Globe2, tone: 'dark', url: 'https://lime-alpaca-990785.hostingersite.com/' },
-  { number: '08', name: 'Study Abroad', type: 'WordPress\nStudent Agency', icon: GraduationCap, tone: 'lime', url: 'https://silver-hedgehog-989523.hostingersite.com/' },
+  { number: '02', name: 'CMC Stages', type: 'Laravel · PHP\nInternship Platform', icon: ServerCog, tone: 'dark', url: 'https://github.com/jamal-byte-20/CMC_Stages' },
+  { number: '03', name: 'Employee Manager', type: 'Python\nDesktop App', icon: UserRoundCog, tone: 'lime', url: 'https://github.com/jamal-byte-20/Employes-manager' },
+  { number: '04', name: 'Portfolio V2', type: 'React · Vite\nPortfolio', icon: AudioWaveform, tone: 'violet', url: 'https://github.com/jamal-byte-20/portfolio_v2' },
+  { number: '05', name: 'Invoice Factory', type: 'Laravel · Blade\nInvoice SaaS', icon: ReceiptText, tone: 'lime', url: 'https://github.com/jamal-byte-20/Invoices_Factory' },
+  { number: '06', name: 'Ekbaal Agency', type: 'WordPress\nMarketing Portfolio', icon: Globe2, tone: 'dark', url: 'https://lime-alpaca-990785.hostingersite.com/' },
+  { number: '07', name: 'Skill Me Website', type: 'WordPress\nLearning Platform', icon: GraduationCap, tone: 'violet', url: 'https://silver-hedgehog-989523.hostingersite.com/' },
 ]
 
 export const services = [
